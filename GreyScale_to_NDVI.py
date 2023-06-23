@@ -18,5 +18,5 @@ false_color_array = color_map(normalized_array)
 # Convert the array to PIL Image
 false_color_image = Image.fromarray((false_color_array[:, :, :3] * 255).astype(np.uint8))
 
-# Save the false color NDVI image as JPEG
+# Save the false color NDVI image as png
 false_color_image.save('false_color_ndvi_download4.png')
